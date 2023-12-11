@@ -101,6 +101,23 @@ You provided an Octave script that performs a computational analysis of Henry Ca
 
 $$ G = \pi^2 \Delta S b^2 \frac{(d^2 + \frac{2}{5}r^2)}{T^2 m_1 L d} $$
 
+
+### Requirements
+- Gnuplot
+
+### Steps
+1. **Gnuplot Script 1:**
+   - Run Gnuplot script:
+     ```bash
+     gnuplot script1.gp
+     ```
+
+2. **Computation of Gravitational Constant (G):**
+   - Execute calculation script.
+
+
+
+
 ## Project 4: Long-Term Trends and Influences in Atmospheric Data
 
 ### Overview
@@ -131,6 +148,134 @@ Long-term trends are assessed using slope analysis with 95% confidence intervals
 
 The code calculates regression estimates to compare the influences of solar activity and atmospheric transparency on temperature in each atmospheric zone. The magnitude of regression estimates is interpreted to determine the strength of each influencer's impact.
 
+
+### Requirements
+- Octave
+
+### Steps
+1. **Run Jupyter Notebook:**
+   - Execute the notebook in a Jupyter environment.
+
+## Project 5: Inverse Theory
+
+In the fifth project of the computational physics assignment, I delved into inverse theory using MATLAB/Octave. Here's a summary of the key aspects:
+
+### Linear Regression
+* Conducted linear regression on given data points `(x_data, y_data)` using the formula `c = A \ y_data`.
+* Visualized the linear regression fit alongside the original data.
+
+### QR Factorization
+* Explored an alternative view of linear regression using QR factorization.
+* Demonstrated that QR factorization yields identical results to linear regression.
+
+### Constrained Least Squares
+* Extended the analysis to constrained least squares fitting, solving a problem of the form `r = A * c`.
+* Visualized the results alongside linear regression.
+
+### Exponential Analysis
+* Implemented exponential analysis for time decay curves using a multi-exponential model.
+* Explored regularization techniques, including Tikhonov regularization.
+* Plotted the trade-off between misfit and model complexity.
+
+### Temperature-dependent Analysis
+* Extended the analysis to temperature-dependent data.
+* Chose a regularization parameter for each temperature.
+* Plotted original data and pseudo-inverse solutions for comparison.
+
+These analyses collectively showcase a comprehensive exploration of inverse theory, covering linear regression, QR factorization, constrained least squares, and exponential analysis in the context of computational physics.
+
+### Requirements
+- MATLAB/Octave
+
+### Steps
+1. **Run MATLAB/Octave:**
+   - Execute the script in MATLAB/Octave.
+
+## Project 6: Fourier Transform and Image Processing
+
+In the sixth project of the computational physics assignment, I explored Fourier Transform and Image Processing using Jupyter Notebook. Here's an overview of the key components:
+
+### Time-domain Signal and Fourier Transform
+* Created a time-domain signal with two square pulses.
+* Plotted the time-domain signal and computed the magnitude and phase spectra using the Fourier Transform.
+* Visualized the power spectrum and phase spectrum.
+
+### 2D Cosine Wave with Gaussian Envelope
+* Generated a 2D cosine wave with a Gaussian envelope.
+* Displayed the image and created a 3D mesh plot for visualization.
+
+### Periodic-Plus-Perfect Fourier Transform (PPFFT)
+* Implemented PPFFT on the generated image with varying Gaussian decay rates.
+* Explored amplitude plots, original image plots, and 3D mesh plots for different decay rates.
+
+### Image Processing with PPFFT
+* Applied PPFFT to a real image obtained from a specified path.
+* Displayed the original image and the PPFFT amplitude and phase plots.
+* Set oversampling factor and adjusted shuffling vectors for optimal results.
+
+These analyses collectively demonstrate a practical application of Fourier Transform and Image Processing techniques in computational physics.
+
+
+### Requirements
+- Jupyter notebook environment
+
+### Steps
+1. **Run Jupyter Notebook:**
+   - Execute the notebook in a Jupyter environment.
+  
+
+## 7. Metropolis Algorithm Simulation for Ising Model
+
+### Overview
+
+This GitHub repository contains the code for the seventh homework project in the computational physics assignment, focusing on the Metropolis algorithm simulation for the Ising model. The Ising model is a mathematical model in statistical mechanics used to simulate the behavior of ferromagnetic materials.
+
+### Code Structure
+
+The main functionalities are encapsulated in the following functions:
+
+1. **DisplayIsing**
+   - Purpose: Visualize the Ising model configuration.
+   - Parameters: `S` - Ising model configuration matrix, `up_colour` and `dn_colour` - colors for up and down spins.
+
+2. **evolve**
+   - Purpose: Implement the Metropolis algorithm to evolve the Ising model configuration.
+   - Parameters: `config` - current configuration, `beta` - inverse temperature.
+
+### Simulation Process
+
+The simulation is divided into several key steps:
+
+1. **Initialization**
+   - Set up initial lattice configuration and calculate initial parameters.
+
+2. **Equilibration**
+   - Perform Monte Carlo steps to reach equilibrium, ensuring a stable starting point.
+
+3. **Calculation**
+   - Perform additional Monte Carlo steps for calculation, accumulating thermodynamic quantities such as energy and magnetization.
+
+4. **Visualization**
+   - Display the Ising model configuration at selected iterations for visual analysis.
+
+5. **Results and Conclusion**
+   - Analyze the results, including graphs of energy, magnetization, specific heat, and susceptibility.
+   - Explore ferromagnetic and anti-ferromagnetic states, as well as the impact of considering next nearest neighbors.
+
+### Results and Conclusion
+
+The README includes a detailed section on the results and conclusions drawn from the simulations. It covers the observed behavior in ferromagnetic and anti-ferromagnetic states, highlighting the impact of modifications to the code. The study also explores the influence of next nearest neighbors on the Ising model dynamics.
+
+### Requirements
+- Python environment
+- Matplotlib library
+
+### Steps
+1. **Run Python Script:**
+   - Execute the Python script to perform the simulation:
+     ```bash
+     python ising_simulation.py
+     ```
 
 
 
